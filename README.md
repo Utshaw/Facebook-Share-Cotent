@@ -2,6 +2,11 @@
 
 Share photo, video, link , any text from App to Facebook <br />
 
+## App Screenshots
+| ![](img/main.png) | ![AudioBlocks](img/image.png)| ![SignUp process](img/url.png) |
+|:---:|:---:|:---:|
+|App Main Activity| Share Photo | Share Any URL|
+
 ## Installation
 - Get started with Facebook App by following [this](https://youtu.be/2ZdzG_XObDM) tutorial
 - Provide your Facebook App ID in [Manifest.xml](blob/master/app/src/main/AndroidManifest.xml) file (Replace {APP_ID} with your Facebook App ID )
