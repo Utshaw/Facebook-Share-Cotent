@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Facebook-Share-Cotent</string>
+
+    <string name="facebook_app_id">@string/secret_facebook_app_id</string>
+    <string name="facebook_login_protocol_scheme">@string/secret_facebook_login_protocol_scheme</string>
+
 </resources>
