@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.share.Sharer;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(this.getApplicationContext());
         setContentView(R.layout.activity_main);
 
         btnShareLink = findViewById(R.id.btnShareLink );
@@ -109,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                        .setQuote("This is useful link")
+                        .setQuote("This is useful link\n From My App")
                         .setContentUrl(Uri.parse("https://youtube.com"))
                         .build();
                 if (ShareDialog.canShow(ShareLinkContent.class)) {

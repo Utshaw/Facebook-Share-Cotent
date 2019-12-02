@@ -1,4 +1,5 @@
-# Facebook Share Content
+# Facebook Share Content ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+
 Share photo, video, link , any text from App to Facebook <br />
 
 ## Installation
@@ -13,6 +14,11 @@ Share photo, video, link , any text from App to Facebook <br />
 
 </resources>
 ```
+## Attention
+- `setContentTitle` ,  `setContentDescription` are now deprecated for `ShareContent` class & doesn't work
+- use `setQuote` method  (`setQuote` supports multiline, use `\n` for that)
+- Video upload is not working . Contributions appreciated. 
+
 
 ## Usage
 - For sharing video from url, follow btnShareLink
